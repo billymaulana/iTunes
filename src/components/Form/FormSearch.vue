@@ -16,11 +16,12 @@ const submitSearch = async () => {
   if (!disableSubmit.value)
     return
   router.push(`/search?keyword=${searchKeyword.value}`.toString())
-  if (route.path !== '' && route.query.keyword)
+  if (route.path !== '/' && route.query.keyword) {
     showModalSearch()
-  const keyword = await route.query.keyword?.toString()
-  await searchStore.getSearchMusic(keyword, 10)
-  window.location.reload()
+    const keyword = await route.query.keyword?.toString()
+    await searchStore.getSearchMusic(keyword, 10)
+    window.location.reload()
+  }
 }
 </script>
 
@@ -31,6 +32,7 @@ const submitSearch = async () => {
       type="text"
       placeholder="Search Artist / Album / Title"
       mb-6 form-control capitalize required
+      @keyup.enter="submitSearch"
     >
     <button
       v-if="route.path === '/'"

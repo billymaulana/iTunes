@@ -12,7 +12,6 @@ declare module '@vue/runtime-core' {
     FormSearch: typeof import('./src/components/Form/FormSearch.vue')['default']
     Loading: typeof import('./src/components/Loading/Loading.vue')['default']
     Logo: typeof import('./src/components/Logo/Logo.vue')['default']
-    Modal: typeof import('./src/components/Modal/Modal.vue')['default']
     ModalSearch: typeof import('./src/components/Modal/ModalSearch.vue')['default']
     Navbar: typeof import('./src/components/Navbar/Navbar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
