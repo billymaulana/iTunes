@@ -11,7 +11,7 @@ export const useSearchStore = defineStore('search', () => {
     if (search) {
       try {
         isLoading.value = true
-        const response = await useMyFetch<ItunesTypes>(`/search?term=${search}&media=music&limit=${limit}`, {
+        const response = await useMyFetch<ItunesTypes>(`/search?term=${search}&media=music&limit=${limit > 0 ? limit : '-'}`, {
           method: 'GET',
           parseResponse: JSON.parse,
         })
