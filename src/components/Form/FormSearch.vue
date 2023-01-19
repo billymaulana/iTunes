@@ -31,14 +31,14 @@ const submitSearch = async () => {
       v-model="searchKeyword"
       type="text"
       placeholder="Search Artist / Album / Title"
-      mb-6 form-control capitalize required
+      mb-6 form-control capitalize required dark="bg-dark text-white"
       @keyup.enter="submitSearch"
     >
     <button
       v-if="route.path === '/'"
       type="submit"
       :disabled="!disableSubmit"
-      :class="!disableSubmit ? 'bg-purple-400' : 'glow-on-hover'"
+      :class="!disableSubmit ? 'bg-purple-400 dark:!bg-purple-700' : 'glow-on-hover dark:!bg-purple-700'"
       btn-primary
     >
       <Spinner v-if="isLoading" />

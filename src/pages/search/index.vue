@@ -31,7 +31,7 @@ const showAllData = async () => {
         <div v-if="searchResult.length > 0" col-12 mx-auto>
           <CardResult text-center w-full :result="searchResult" />
           <div>
-            <button v-if="!isHidden" id="showAll" text-gray-400 bg-gray-300 rounded-full px-5 py-2 f-14 @click="showAllData">
+            <button v-if="!isHidden" id="showAll" text-gray-400 bg-gray-300 dark:bg-dark-200 rounded-full px-5 py-2 f-14 @click="showAllData">
               Show All Result
             </button>
           </div>

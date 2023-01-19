@@ -42,7 +42,7 @@ onMounted(() => {
 
 <template>
   <div v-if="listMusic">
-    <div v-for="(item, idx) in listMusic" :key="idx" class="card">
+    <div v-for="(item, idx) in listMusic" :key="idx" class="card bg-white" dark="bg-dark-200">
       <div class="cover">
         <img class="cover-album" :src="item.artworkUrl100">
         <div class="audio-wrapper">
@@ -90,7 +90,6 @@ onMounted(() => {
     position: relative;
     padding: 12px 15px;
     width: 100%;
-    background-color: #fff;
     display: flex;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%);
     border-radius: 10px;

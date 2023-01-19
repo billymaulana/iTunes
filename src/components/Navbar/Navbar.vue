@@ -10,7 +10,7 @@ const toogleModal = () => {
 
 <template>
   <header>
-    <nav class="navbar bg-gradient-100">
+    <nav class="navbar bg-gradient-100 dark:bg-gradient-dark-100 dark:shadow-none">
       <div>
         <i i-ph:list-bold f-16 block />
       </div>

@@ -13,6 +13,7 @@ export default defineConfig({
     [/^f-(\d+)$/, ([, d]) => ({ 'font-size': `${d}px` })],
     [/^max-w-(\d+)$/, ([, d]) => ({ 'max-width': `${d}px` })],
     [/^bg-gradient-(\d+)$/, ([,d]) => ({ 'background-image': `linear-gradient(${d}deg, #712bda, #a45deb 100%)` })],
+    [/^bg-gradient-dark-(\d+)$/, ([,d]) => ({ 'background-image': `linear-gradient(${d}deg, #000000, #3c3c3c 100%)` })],
   ],
   shortcuts: [
     ['container-fluid', 'max-w-[100%] ml-[15px]'],

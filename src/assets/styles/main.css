@@ -8,13 +8,12 @@ body,
   -webkit-font-smoothing: antialiased;
   touch-action: manipulation;
   -moz-osx-font-smoothing: grayscale;
-  background:#f8fafc;
 }
 [v-cloack]{
   display:none;
 }
-html.dark{
-  background: #101010;
+html.dark < body{
+  background: #101010!important;
 }
 
 .row>*{
