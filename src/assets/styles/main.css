@@ -1,0 +1,30 @@
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-font-smoothing: antialiased;
+  touch-action: manipulation;
+  -moz-osx-font-smoothing: grayscale;
+  background:#f8fafc;
+}
+[v-cloack]{
+  display:none;
+}
+html.dark{
+  background: #101010;
+}
+
+.row>*{
+  flex-shrink:0;
+  width:100%;
+  max-width:100%;
+  padding-right:calc(1.5rem * .5);
+  padding-left:calc(1.5rem * .5);
+}
+
+button[disabled]:hover{
+  cursor:not-allowed
+}
