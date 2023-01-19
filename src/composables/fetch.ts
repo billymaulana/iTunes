@@ -2,7 +2,8 @@
 import { ofetch } from 'ofetch'
 
 export const useMyFetch = ofetch.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL || 'https://itunes.apple.com',
+  // baseURL: import.meta.env.VITE_API_BASE_URL || 'https://itunes.apple.com',
+  baseURL: 'https://itunes.apple.com',
   async onRequest({ request }) {
     console.log('fetch request', request)
   },
