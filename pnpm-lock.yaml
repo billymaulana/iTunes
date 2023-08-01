@@ -13,7 +13,7 @@ specifiers:
   jsdom: ^20.0.3
   ofetch: ^1.0.0
   pinia: ^2.0.29
-  pnpm: ^7.25.1
+  pnpm: ^7.33.4
   sass: ^1.57.1
   taze: ^0.8.5
   typescript: ^4.9.4
@@ -45,7 +45,7 @@ devDependencies:
   '@vue/test-utils': 2.2.7_vue@3.2.45
   eslint: 8.32.0
   jsdom: 20.0.3
-  pnpm: 7.25.1
+  pnpm: 7.33.4
   sass: 1.57.1
   taze: 0.8.5
   typescript: 4.9.4
@@ -3862,8 +3862,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /pnpm/7.25.1:
-    resolution: {integrity: sha512-y/jlADVxyk+scBwI0ALRf8QoUMgrWyONnD1voZaPTBI+D+aIXXiFG9pMk3eLhvEfc0nK8KUnnbDDBTywd7WsMw==}
+  /pnpm/7.33.4:
+    resolution: {integrity: sha512-xEbf/tkwHpGM/GXq5U/sDSiE6ykLPho+o71PHNRWqkVLm6dJe4G/5Pg619Ow32ovekrr7pii5qtfamujB/+1bA==}
     engines: {node: '>=14.6'}
     hasBin: true
     dev: true
